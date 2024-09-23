@@ -37,12 +37,12 @@
               <img src="./assets/logo.png" alt="" />
               <p class="font-bold text-black text-3xl">Donate Bangladesh</p>
             </div>
-            <div class="flex items-center space-x-3">
+            <div class="flex items-center lg:space-x-3">
               <img src="./assets/coin.png" alt="" />
               <div
                 class="flex items-center space-x-2 font-semibold text-xl text-black"
               >
-                <span>5500 </span>
+                <span id="nav_value">5500 </span>
                 <p>BDT</p>
               </div>
             </div>
@@ -53,11 +53,13 @@
       <!-- extra button -->
       <div class="mt-8 text-center space-x-3 mb-4">
         <button
-          class="bg-[#B4F461] rounded-md p-2 px-6 font-semibold text-xl text-black"
+          id="donation_btn"
+          class="bg-lime-300 rounded-md p-2 px-6 font-semibold text-xl text-black"
         >
           Donation
         </button>
         <button
+          id="history_btn"
           class="rounded-md text-gray-900 p-2 px-6 font-semibold text-lg border border-slate-400 hover:bg-slate-300 transition-200 ease-in-out"
         >
           History
@@ -66,26 +68,27 @@
     </section>
     <!-- card container -->
 
-    <main class="container mx-auto py-10 space-y-10">
+    <main id="main_form" class="container mx-auto py-10 space-y-10">
       <!-- card-1 -->
+
       <section class="border border-slate-300 rounded-lg p-8 shadow-lg">
-        <div class="flex items-center justify-between">
-          <div class="w-1/2">
+        <div class="lg:flex items-center justify-between">
+          <div class="lg:w-1/2">
             <img src="./assets/noakhali.png" alt="" />
           </div>
-          <div class="w-1/2 space-y-7 mr-5">
-            <button class="bg-amber-100 py-2 px-3 rounded-md text-sm">
+          <div class="lg:w-1/2 space-y-7 mr-5">
+            <button class="bg-amber-100 py-2 px-3 rounded-md">
               <div class="flex items-center space-x-3">
                 <img src="./assets/coin.png" alt="" />
                 <div
                   class="flex items-center space-x-2 font-semibold text-md text-black"
                 >
-                  <span>5000 </span>
+                  <span id="cardValue1">5000 </span>
                   <p>BDT</p>
                 </div>
               </div>
             </button>
-            <h3 class="text-lg font-bold">
+            <h3 id="heading_text" class="text-lg font-bold">
               Donate for Flood at Noakhali,Bangladesh
             </h3>
             <p>
@@ -99,11 +102,13 @@
               class="border border-slate-300 py-3 rounded-lg text-slate-500 px-8 w-full"
               type="number"
               name=""
-              id=""
+              id="inputValue1"
               placeholder="Write Donation Amount"
             />
+
             <div>
               <button
+                id="card1_btn"
                 class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
               >
                 Donate Now
@@ -116,18 +121,18 @@
       <!-- card-2 -->
 
       <section class="border border-slate-300 rounded-lg p-8 shadow-lg">
-        <div class="flex items-center justify-between">
-          <div class="w-1/2">
+        <div class="lg:flex items-center justify-between">
+          <div class="lg:w-1/2">
             <img src="./assets/feni.png" alt="" />
           </div>
-          <div class="w-1/2 space-y-7 mr-5">
+          <div class="lg:w-1/2 space-y-7 mr-5">
             <button class="bg-amber-100 py-2 px-3 rounded-md text-sm">
               <div class="flex items-center space-x-3">
                 <img src="./assets/coin.png" alt="" />
                 <div
                   class="flex items-center space-x-2 font-semibold text-md text-black"
                 >
-                  <span>600 </span>
+                  <span id="cardValue2">600 </span>
                   <p>BDT</p>
                 </div>
               </div>
@@ -149,11 +154,12 @@
               class="border border-slate-300 py-3 rounded-lg text-slate-500 px-8 w-full"
               type="number"
               name=""
-              id=""
+              id="inputValue2"
               placeholder="Write Donation Amount"
             />
             <div>
               <button
+                id="card2_btn"
                 class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
               >
                 Donate Now
@@ -165,18 +171,18 @@
 
       <!-- card-3 -->
       <section class="border border-slate-300 rounded-lg p-8 shadow-lg">
-        <div class="flex items-center justify-between">
-          <div class="w-1/2">
+        <div class="lg:flex items-center justify-between">
+          <div class="lg:w-1/2">
             <img src="./assets/quota-protest.png" alt="" />
           </div>
-          <div class="w-1/2 space-y-7 mr-5">
+          <div class="lg:w-1/2 space-y-7 mr-5">
             <button class="bg-amber-100 py-2 px-3 rounded-md text-sm">
               <div class="flex items-center space-x-3">
                 <img src="./assets/coin.png" alt="" />
                 <div
                   class="flex items-center space-x-2 font-semibold text-md text-black"
                 >
-                  <span>2400 </span>
+                  <span id="cardValue3">2400 </span>
                   <p>BDT</p>
                 </div>
               </div>
@@ -199,11 +205,178 @@
               class="border border-slate-300 py-3 rounded-lg text-slate-500 px-8 w-full"
               type="number"
               name=""
-              id=""
+              id="inputValue3"
               placeholder="Write Donation Amount"
             />
             <div>
               <button
+                id="card3_btn"
+                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card-4 -->
+      <section class="border border-slate-300 rounded-lg p-8 shadow-lg">
+        <div class="lg:flex items-center justify-between">
+          <div class="lg:w-1/2">
+            <img
+              class="w-[550px] h-[500px] rounded-2xl"
+              src="./assets/card4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-1/2 space-y-7 mr-5">
+            <button class="bg-amber-100 py-2 px-3 rounded-md text-sm">
+              <div class="flex items-center space-x-3">
+                <img src="./assets/coin.png" alt="" />
+                <div
+                  class="flex items-center space-x-2 font-semibold text-md text-black"
+                >
+                  <span id="cardValue4">2400 </span>
+                  <p>BDT</p>
+                </div>
+              </div>
+            </button>
+            <h3 class="text-lg font-bold">Aid for world flood fund</h3>
+            <p>
+              As well as human lives, the economy of the country is the most
+              vulnerable to the direct impacts of the intensified natural
+              disasters. According to the Asian Development Bank, 31.5% people
+              are yet under poverty line which is the highest in South Asia. As
+              a great number of people (66%) live in the rural areas and
+              directly live on agriculture, they are nonetheless more vulnerable
+              to flood and similar disasters. Being a developing country with a
+              huge population it often becomes challenging for the country to
+              manage such colossal disasters with limited resources. The most
+              vulnerable population of the country suffer from poverty, epidemic
+              diseases, dislocation, migration, etc.
+            </p>
+            <input
+              class="border border-slate-300 py-3 rounded-lg text-slate-500 px-8 w-full"
+              type="number"
+              name=""
+              id="inputValue4"
+              placeholder="Write Donation Amount"
+            />
+            <div>
+              <button
+                id="card4_btn"
+                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card-5 -->
+      <section class="border border-slate-300 rounded-lg p-8 shadow-lg">
+        <div class="lg:flex items-center justify-between">
+          <div class="lg:w-1/2">
+            <img
+              class="w-[550px] h-[500px] rounded-2xl"
+              src="./assets/card5.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-1/2 space-y-7 mr-5">
+            <button class="bg-amber-100 py-2 px-3 rounded-md text-sm">
+              <div class="flex items-center space-x-3">
+                <img src="./assets/coin.png" alt="" />
+                <div
+                  class="flex items-center space-x-2 font-semibold text-md text-black"
+                >
+                  <span id="cardValue5">4000 </span>
+                  <p>BDT</p>
+                </div>
+              </div>
+            </button>
+            <h3 class="text-lg font-bold">Overview of the current situation</h3>
+            <p>
+              Flood is one of most chronological and devastating disasters for
+              Bangladesh. and it has been affecting the country throughout
+              history, especially during the years 1966, 1987, 1988, 1998 and
+              2004 and 2017. The 2007 South Asian floods affected a large
+              portion of Bangladesh. According to prevention web Bangladesh
+              suffered total economic losses due to different hazards of 285,400
+              million US$ in the last 10 years, where average annual losses by
+              flood is more than 64%. Almost all sectors of the country, i.e
+              agriculture, shelter, transport, land, education, forests,
+              industries and other livelihoods of people, have been affected by
+              flood. Though there is no statistical evidence but the frequency
+              of flooding in Bangladesh has increased greatly in the 20th
+              century.
+            </p>
+            <input
+              class="border border-slate-300 py-3 rounded-lg text-slate-500 px-8 w-full"
+              type="number"
+              name=""
+              id="inputValue5"
+              placeholder="Write Donation Amount"
+            />
+            <div>
+              <button
+                id="card5_btn"
+                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card-6 -->
+      <section class="border border-slate-300 rounded-lg p-8 shadow-lg">
+        <div class="lg:flex items-center justify-between">
+          <div class="lg:w-1/2">
+            <img
+              class="w-[550px] h-[500px] rounded-2xl"
+              src="./assets/card6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-1/2 space-y-7 mr-5">
+            <button class="bg-amber-100 py-2 px-3 rounded-md text-sm">
+              <div class="flex items-center space-x-3">
+                <img src="./assets/coin.png" alt="" />
+                <div
+                  class="flex items-center space-x-2 font-semibold text-md text-black"
+                >
+                  <span id="cardValue6">8000 </span>
+                  <p>BDT</p>
+                </div>
+              </div>
+            </button>
+            <h3 class="text-lg font-bold">
+              Integrated Flood Resilience Program (IFRP):
+            </h3>
+            <p>
+              There is indication that the inter-annual variation of floods and
+              the areal extent of big events have increased since 1950. In line
+              with this the northern part of Bangladesh is highly exposed to
+              flood and climate change effect. The recent years devastation
+              evidently shows that flood is still a matter of grave concern for
+              Bangladesh. Moreover, recent analysis show, around 1.3 & 3.7
+              million people were affected and 216,010 were displaced by flood
+              of 2014 & 2016, respectively. In terms of capacity and knowledge,
+              flood affected people have very limited access to resources and
+              scientific knowledge about coping with flood; however, they have
+              traditional practices but no cumulative approach.
+            </p>
+            <input
+              class="border border-slate-300 py-3 rounded-lg text-slate-500 px-8 w-full"
+              type="number"
+              name=""
+              id="inputValue6"
+              placeholder="Write Donation Amount"
+            />
+            <div>
+              <button
+                id="card6_btn"
                 class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
               >
                 Donate Now
@@ -215,9 +388,11 @@
     </main>
 
     <!-- history section -->
-    <section>
-      <div></div>
-    </section>
+
+    <section
+      id="history_section"
+      class="hidden space-y-8 mx-auto w-2/4 border border-slate-400 py-4 px-5 rounded-lg"
+    ></section>
 
     <script src="index.js"></script>
   </body>
