@@ -305,6 +305,10 @@ function blogger(){
   window.location.href='/blog.html'
 }
 
+function blogger2(){
+  window.location.href='/index.html'
+}
+
 
 
 const donationBtn1 = document.getElementById('donation_btn')

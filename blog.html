@@ -13,7 +13,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main>
+    <section
+      class="border border-b-slate-200 shadow-sm top-0 left-0 sticky bg-yellow-50"
+    >
+      <!-- navbar -->
+      <div class="bg-orange-100">
+        <nav class="container mx-auto">
+          <div class="flex items-center justify-between py-8">
+            <div
+              class="bg-[#B4F461] rounded-md p-2 px-6 font-semibold text-xl text-black"
+            >
+              <button onclick="blogger2()">Home</button>
+            </div>
+            <div class="flex items-center space-x-3">
+              <img src="./assets/logo.png" alt="" />
+              <p class="font-bold text-black text-3xl">Donate Bangladesh</p>
+            </div>
+            <div class="flex items-center lg:space-x-3">
+              <img src="./assets/coin.png" alt="" />
+              <div
+                class="flex items-center space-x-2 font-semibold text-xl text-black"
+              >
+                <span id="nav_value">5500 </span>
+                <p>BDT</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- extra button -->
+      <!-- <div class="mt-8 text-center space-x-3 mb-4">
+        <button
+          id="donation_btn"
+          class="bg-lime-300 rounded-md p-2 px-6 font-semibold text-xl text-black"
+        >
+          Donation
+        </button>
+        <button
+          id="history_btn"
+          class="rounded-md text-gray-900 p-2 px-6 font-semibold text-lg border border-slate-400 hover:bg-slate-300 transition-200 ease-in-out"
+        >
+          History
+        </button>
+      </div> -->
+    </section>
+
+    <main class="container mx-auto">
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-2xl font-bold">
@@ -79,5 +125,6 @@
         </div>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
