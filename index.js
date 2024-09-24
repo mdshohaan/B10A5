@@ -2,6 +2,8 @@
   function getInputValueById (id){
     return parseFloat(document.getElementById(id).value)
   }
+
+  const modal = document.getElementById('my_modal_1')
 //  card-1
 
 document.getElementById('card1_btn').addEventListener('click',function(){
@@ -11,12 +13,14 @@ document.getElementById('card1_btn').addEventListener('click',function(){
 
    
    
-    
+   
 
   
 
  if(inputValue1 <= 0 || isNaN(inputValue1)){
     alert ('Invalid Input')
+ 
+    modal.close()
     return
     
  }
@@ -65,6 +69,7 @@ document.getElementById('card2_btn').addEventListener('click',function(){
 
  if(inputValue2 <= 0 || isNaN(inputValue2)){
     alert ('Invalid Input')
+    modal.close()
     return
 
  }
@@ -109,6 +114,7 @@ document.getElementById('card3_btn').addEventListener('click',function(){
 
  if(inputValue3 <= 0 || isNaN(inputValue3)){
     alert ('Invalid Input')
+    modal.close()
     return
  }
  else{
@@ -153,6 +159,7 @@ document.getElementById('card4_btn').addEventListener('click',function(){
 
  if(inputValue4 <= 0 || isNaN(inputValue4)){
     alert ('Invalid Input')
+    modal.close()
     return
  }
  else{
@@ -196,6 +203,7 @@ document.getElementById('card5_btn').addEventListener('click',function(){
 
  if(inputValue5 <= 0 || isNaN(inputValue5)){
     alert ('Invalid Input')
+    modal.close()
     return
  }
  else{
@@ -240,6 +248,7 @@ document.getElementById('card6_btn').addEventListener('click',function(){
 
  if(inputValue6 <= 0 || isNaN(inputValue6)){
     alert ('Invalid Input')
+    modal.close()
     return
  }
  else{
