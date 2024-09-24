@@ -1,3 +1,4 @@
+//   common function
   function getInputValueById (id){
     return parseFloat(document.getElementById(id).value)
   }
@@ -33,7 +34,7 @@ document.getElementById('card1_btn').addEventListener('click',function(){
 
 
     const div = document.createElement('div')
-    div.classList.add('bg-white')
+    div.classList.add('bg-slate-300', 'p-6','rounded-lg')
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue1} Taka is donated for famine-2024 at feni,Bangladesh
     </h3>
@@ -79,7 +80,7 @@ document.getElementById('card2_btn').addEventListener('click',function(){
 
 
     const div = document.createElement('div')
-    div.classList.add('bg-white')
+    div.classList.add('bg-slate-300', 'p-6','rounded-lg')
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue2} Taka Donate for Flood at Noakhali,Bangladesh
     </h3>
@@ -123,7 +124,7 @@ document.getElementById('card3_btn').addEventListener('click',function(){
 
 
      const div = document.createElement('div')
-     div.classList.add('bg-white')
+     div.classList.add('bg-slate-300', 'p-6','rounded-lg')
      div.innerHTML = `
      <h3 class="text-lg font-semibold ">${inputValue3} Taka Aid for Injured in the Quota Movement
      </h3>
@@ -167,7 +168,7 @@ document.getElementById('card4_btn').addEventListener('click',function(){
 
 
     const div = document.createElement('div')
-    div.classList.add('bg-white')
+    div.classList.add('bg-slate-300', 'p-6','rounded-lg')
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue4} Taka Aid for world flood fund
     </h3>
@@ -212,7 +213,7 @@ document.getElementById('card5_btn').addEventListener('click',function(){
 
 
     const div = document.createElement('div')
-    div.classList.add('bg-white')
+    div.classList.add('bg-slate-300', 'p-6','rounded-lg')
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue5} Taka Aid for Overview of the current situation
     </h3>
@@ -255,14 +256,15 @@ document.getElementById('card6_btn').addEventListener('click',function(){
 
 
     const div = document.createElement('div')
-    div.classList.add('bg-white')
+    div.className="bg-slate-300 border border-slate-300 p-6 rounded-lg "
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue6} Taka Integrated Flood Resilience Program (IFRP):
     </h3>
         <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
     `
    const historySection = document.getElementById('history_section')
-   historySection.appendChild(div)
+    historySection.appendChild(div)
+   // historySection.insertBefore(div,historySection,firstChild)
    
      
  }
@@ -302,3 +304,29 @@ historyBtn.addEventListener('click',function(){
 function blogger(){
   window.location.href='/blog.html'
 }
+
+
+
+const donationBtn1 = document.getElementById('donation_btn')
+const historyBtn1 = document.getElementById('history_btn')
+donationBtn1.addEventListener('click',function(){
+   donationBtn1.classList.add(
+       "text-black","bg-lime-300"
+    );
+    donationBtn1.classList.add(
+        "hover:bg-slate-300","text-gray-900","border","border-slate-400" 
+    )
+    historyBtn1.classList.remove(
+       "bg-lime-300", "text-black"
+    )
+    historyBtn1.classList.add(
+         'hover:bg-slate-300','text-gray-900',"border","border-slate-400"
+    )
+    document.getElementById('main_form').classList.remove('hidden')
+    document.getElementById('history_section').classList.add('hidden')
+
+    //  const inputValue1 = parseFloat(document.getElementById('inputValue1').value)
+    
+
+ 
+})
