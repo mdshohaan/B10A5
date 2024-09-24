@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-2xl font-bold">
+          What is Document Object Model(DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the page so that programs can change the
+            document structure, style, and content. The DOM represents the
+            document as nodes and objects; that way, programming languages can
+            interact with the page.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">
+          How do you select an-element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Got to grips with how the DOM is structured—it's like a tree with
+            nodes, and every element in your HTML is a part of this data
+            structure. Dived into using .getElementById() to select elements by
+            their unique ID, which is a straight shot to identifying specific
+            elements. Discovered the power of .querySelector() for using CSS
+            selectors to find elements, which is incredibly versatile as it can
+            select any CSS query. Explored .querySelectorAll() to fetch an
+            array-like collection of nodes, allowing you to work with multiple
+            elements that match your query. Touched upon the difference between
+            HTMLCollection and NodeList—the former is live and updates with the
+            DOM, while the latter is static.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">
+          What is Event Delegation in the context of the DOM,and why is useful?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a design pattern in JavaScript used to
+            efficiently manage and handle events on multiple child elements by
+            attaching a single event listener to a common ancestor element.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">
+          How do you manipulate an elements attributes and style using the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Here, we will explore some commonly used DOM methods to find HTML
+            elements, along with examples and easy explanations. Get Element by
+            ID. ... Get Elements by Class Name. ... Get Elements by Tag Name.
+            ... Query Selector All. ... innerHTML. ... innerText. ... Add Class.
+            ... Remove Class
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

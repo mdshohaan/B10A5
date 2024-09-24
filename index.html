@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .inter {
         font-family: "Inter", sans-serif;
@@ -31,7 +39,7 @@
             <div
               class="bg-[#B4F461] rounded-md p-2 px-6 font-semibold text-xl text-black"
             >
-              <button>Blog</button>
+              <button onclick="blogger()">Blog</button>
             </div>
             <div class="flex items-center space-x-3">
               <img src="./assets/logo.png" alt="" />
@@ -109,7 +117,8 @@
             <div>
               <button
                 id="card1_btn"
-                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                class="btn bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                onclick="my_modal_1.showModal()"
               >
                 Donate Now
               </button>
@@ -160,7 +169,8 @@
             <div>
               <button
                 id="card2_btn"
-                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                class="btn bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                onclick="my_modal_1.showModal()"
               >
                 Donate Now
               </button>
@@ -211,7 +221,8 @@
             <div>
               <button
                 id="card3_btn"
-                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                class="btn bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                onclick="my_modal_1.showModal()"
               >
                 Donate Now
               </button>
@@ -265,7 +276,8 @@
             <div>
               <button
                 id="card4_btn"
-                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                class="btn bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                onclick="my_modal_1.showModal()"
               >
                 Donate Now
               </button>
@@ -321,7 +333,8 @@
             <div>
               <button
                 id="card5_btn"
-                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                class="btn bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                onclick="my_modal_1.showModal()"
               >
                 Donate Now
               </button>
@@ -377,7 +390,8 @@
             <div>
               <button
                 id="card6_btn"
-                class="bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                class="btn bg-[#B4F461] rounded-lg p-3 px-6 font-semibold text-xl text-black w-full"
+                onclick="my_modal_1.showModal()"
               >
                 Donate Now
               </button>
@@ -393,6 +407,26 @@
       id="history_section"
       class="hidden space-y-8 mx-auto w-2/4 border border-slate-400 py-4 px-5 rounded-lg"
     ></section>
+
+    <!-- modal -->
+    <div>
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex flex-col items-center">
+          <h1 class="text-4xl font-extrabold">Congrates!</h1>
+          <img class="w-10 mx-auto mt-4" src="./assets/coin.png" alt="" />
+          <p class="py-4 font-extralight">You Have Donated for Humankind</p>
+          <p class="py-4 font-extrabold text-xl">Successfully</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </div>
 
     <script src="index.js"></script>
   </body>
