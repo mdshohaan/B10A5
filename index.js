@@ -248,7 +248,7 @@ document.getElementById('card6_btn').addEventListener('click',function(){
 
  if(inputValue6 <= 0 || isNaN(inputValue6)){
     alert ('Invalid Input')
-    modal.close()
+      modal.close()
     return
  }
  else{
