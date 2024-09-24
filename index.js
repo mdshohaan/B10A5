@@ -42,7 +42,7 @@ document.getElementById('card1_btn').addEventListener('click',function(){
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue1} Taka is donated for famine-2024 at feni,Bangladesh
     </h3>
-         <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
+         <p> Date:${Date()} </p>
     `
    const historySection = document.getElementById('history_section')
    historySection.appendChild(div)
@@ -89,7 +89,7 @@ document.getElementById('card2_btn').addEventListener('click',function(){
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue2} Taka Donate for Flood at Noakhali,Bangladesh
     </h3>
-         <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
+         <p> Date:${Date()} </p>
     `
    const historySection = document.getElementById('history_section')
    historySection.appendChild(div)
@@ -134,7 +134,7 @@ document.getElementById('card3_btn').addEventListener('click',function(){
      div.innerHTML = `
      <h3 class="text-lg font-semibold ">${inputValue3} Taka Aid for Injured in the Quota Movement
      </h3>
-         <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
+         <p> Date:${Date()} </p>
      `
     const historySection = document.getElementById('history_section')
     historySection.appendChild(div)
@@ -179,7 +179,7 @@ document.getElementById('card4_btn').addEventListener('click',function(){
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue4} Taka Aid for world flood fund
     </h3>
-         <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
+         <p> Date:${Date()} </p>
     `
    const historySection = document.getElementById('history_section')
    historySection.appendChild(div)
@@ -225,7 +225,7 @@ document.getElementById('card5_btn').addEventListener('click',function(){
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue5} Taka Aid for Overview of the current situation
     </h3>
-        <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
+        <p> Date:${Date()} </p>
     `
    const historySection = document.getElementById('history_section')
    historySection.appendChild(div)
@@ -269,7 +269,7 @@ document.getElementById('card6_btn').addEventListener('click',function(){
     div.innerHTML = `
     <h3 class="text-lg font-semibold ">${inputValue6} Taka Integrated Flood Resilience Program (IFRP):
     </h3>
-        <p> Date:${new Date('2024-08-25T12:00:00Z')} </p>
+        <p> Date:${Date()} </p>
     `
    const historySection = document.getElementById('history_section')
     historySection.appendChild(div)
